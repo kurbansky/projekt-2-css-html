@@ -1,0 +1,407 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navigation {
+  height: 50px;
+  background: #4e4e4e;
+}
+
+.link-item.offers-link {
+  margin: 0 20px;
+}
+
+.right-nav .disabled {
+  cursor: not-allowed;
+}
+
+.container {
+  width: 92%;
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+  margin-left: auto;
+}
+
+.company {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.navigation .container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.links-list {
+  display: none;
+}
+
+.right-nav {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.link-item {
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  height: calc(100vh - 50px);
+  background-image: url(./assets/pexels-francesco-ungaro-2325446.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  width: 89%;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: white;
+}
+
+.shadow {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.paragraph {
+  margin: 46px 0;
+  color: white;
+  margin-top: 63px;
+  margin-bottom: 42px;
+}
+
+.offer-btn {
+  height: 41px;
+  width: 164px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  text-decoration: none;
+  transition-duration: 1s;
+}
+
+.specialists,
+.offers {
+  padding: 50px 0;
+}
+
+.specialists .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.specialists {
+  background: #bca68f;
+}
+.heading-specialists {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: white;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.specialist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.specialist:nth-of-type(even) {
+  margin-top: 54px;
+  margin-bottom: 25px;
+}
+
+.specialist-img {
+  min-width: 197px;
+  height: 197px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.specialist:nth-of-type(odd) .specialist-img {
+  background-image: url(./assets/pexels-christina-morillo-1181424\ v.3.jpg);
+}
+
+.specialist:nth-of-type(even) .specialist-img {
+  background-image: url(./assets/pexels-daniel-xavier-1239291.jpg);
+}
+
+.specialist-info-wrapper,
+.specialist-info-wrapper-sec {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  margin-top: 54px;
+}
+
+.name,
+.second-name {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.offers .container {
+  justify-content: center;
+}
+
+.offers {
+  background: #756657;
+}
+.offers-section {
+  font-size: 26px;
+  line-height: 30px;
+  color: white;
+  margin-bottom: 59px;
+  margin-right: 10px;
+  margin-left: 9px;
+}
+
+.box {
+  position: relative;
+  width: 339px;
+  height: 332px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px #975c038d;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  align-items: center;
+}
+
+.circle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: coral;
+  top: -12.5px;
+  left: -12.5px;
+}
+
+footer {
+  height: 147px;
+  background: #4e4e4e;
+  color: white;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.footer-paragraph {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.fa-instagram {
+  font-size: 31px;
+}
+
+.fa-square-facebook {
+  font-size: 31px;
+  margin-left: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .heading {
+    width: 70%;
+  }
+
+  .name,
+  .second-name {
+    display: flex;
+    justify-content: center;
+  }
+
+  .box-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    justify-content: center;
+  }
+  .box {
+    width: 198px;
+    height: 194px;
+  }
+
+  .footer {
+    height: 105px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+  .links-list {
+    display: block;
+    display: flex;
+  }
+
+  .heading {
+    width: 60%;
+  }
+
+  .offer-btn:hover {
+    background: white;
+    color: black;
+  }
+
+  .specialists,
+  .offers {
+    padding: 50px 0;
+  }
+
+  .section {
+    height: 100vh;
+  }
+
+  .specialists .container {
+    height: 100%;
+  }
+
+  .specialists {
+    background: #bca68f;
+  }
+  .heading-specialists {
+    margin-bottom: 78px;
+    justify-content: normal;
+  }
+
+  .specialist {
+    flex-direction: row;
+  }
+
+  .specialist:nth-of-type(even) {
+    flex-direction: row-reverse;
+    text-align: right;
+    margin-top: 140px;
+    margin-bottom: 80px;
+  }
+
+  .specialist:nth-of-type(odd) .specialist-img {
+    margin-right: 60px;
+  }
+
+  .specialist:nth-of-type(even) .specialist-img {
+    margin-left: 60px;
+  }
+
+  .specialist-info-wrapper,
+  .specialist-info-wrapper-sec {
+    justify-content: center;
+    text-align: start;
+    margin-top: 0px;
+  }
+
+  .specialist-info-wrapper-sec .second-name,
+  .specialist-info-wrapper-sec .description {
+    text-align: right;
+  }
+
+  .name,
+  .second-name {
+    display: block;
+  }
+
+  .second-name {
+    margin-bottom: 30px;
+  }
+
+  .offers-section {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 50px;
+    margin-bottom: 83px;
+  }
+
+  .box-container {
+    grid-template-columns: auto auto auto;
+    gap: 63px;
+  }
+
+  .box:hover {
+    animation-name: grow;
+    animation-duration: 0.5s;
+  }
+
+  @keyframes grow {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .footer {
+    height: 71px;
+  }
+
+  .footer .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
