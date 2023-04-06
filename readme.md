@@ -1,5 +1,6 @@
 # Website Project
 > This is a template of a responsive company website adapted for a variety of devices using only html/css. The project is from the bootcamp.
+> Live demo [_here_](https://joyful-malasada-e89c38.netlify.app/)
 
 ## Table of contents
 * [General information](#general-information)
