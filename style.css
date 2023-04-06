@@ -182,13 +182,11 @@ ul {
 .offers {
   background: #756657;
 }
-.offers-section {
+.heading-offers {
   font-size: 26px;
   line-height: 30px;
   color: white;
   margin-bottom: 59px;
-  margin-right: 10px;
-  margin-left: 9px;
 }
 
 .box {
@@ -299,19 +297,17 @@ footer {
   .heading {
     width: 60%;
   }
+  .header {
+    height: 100vh;
+  }
 
   .offer-btn:hover {
     background: white;
     color: black;
   }
 
-  .specialists,
-  .offers {
+  .specialists {
     padding: 50px 0;
-  }
-
-  .section {
-    height: 100vh;
   }
 
   .specialists .container {
@@ -334,7 +330,6 @@ footer {
     flex-direction: row-reverse;
     text-align: right;
     margin-top: 140px;
-    margin-bottom: 80px;
   }
 
   .specialist:nth-of-type(odd) .specialist-img {
@@ -366,11 +361,9 @@ footer {
     margin-bottom: 30px;
   }
 
-  .offers-section {
+  .heading-offers {
     font-size: 36px;
     line-height: 42px;
-    margin-top: 50px;
-    margin-bottom: 83px;
   }
 
   .box-container {
@@ -378,21 +371,12 @@ footer {
     gap: 63px;
   }
 
-  .box:hover {
-    animation-name: grow;
-    animation-duration: 0.5s;
+  .box {
+    transition: 0.5s;
   }
 
-  @keyframes grow {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
-    }
+  .box:hover {
+    transform: scale(1.05);
   }
 
   .footer {
@@ -403,5 +387,8 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+  .icons {
+    margin-top: 0px;
   }
 }
